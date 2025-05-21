@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+	width:100%;
+padding:0;
+margin:0;
+font-family: Arial, sans-serif;
+background-color:  #ACAB9E; /* Light gray background */
+
+}
+
+/* Header - Increased Height */
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #D8D8D5;
+padding: 25px 30px; /* padding for height */
+border-bottom: 2px solid #ddd;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Left Section */
+.left-section {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+
+/* Menu Icon */
+
+
+/* Menu Text */
+.menu-text {
+font-size: 18px;
+font-weight: bold;
+}
+
+/* Search Input (Smaller Size) */
+.search-input {
+width: 190px; /* Reduced width */
+padding: 8px 14px; /* Smaller padding */
+border: 2px solid #ccc;
+border-radius: 20px;
+font-size: 14px; /* Reduced font size */
+outline: none;
+transition: all 0.3s ease-in-out;
+background-color: white;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Placeholder Styling - Slightly Smaller & More Refined */
+.search-input::placeholder {
+color: #777; /* Medium gray for readability */
+font-style: italic;
+font-size: 13px; /* Reduced size */
+font-weight: 400; /* Normal weight */
+letter-spacing: 0.3px; /* Subtle effect */
+opacity: 0.8;
+}
+
+/* Search Input Focus Effect */
+.search-input:focus {
+border-color: #007bff;
+box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.5);
+background-color: #f8f9fa;
+}
+
+.search-input:focus::placeholder {
+color: #007bff; /* Turns blue on focus */
+opacity: 1;
+}
+
+/* Logo */
+.logo {
+font-size: 28px;
+font-weight: bold;
+letter-spacing: 2px;
+}
+
+/* Right Section (Navigation Links) */
+.right-section a {
+margin-left: 20px;
+text-decoration: none;
+color: black;
+font-size: 18px;
+font-weight: bold;
+transition: color 0.3s ease-in-out;
+}
+
+.right-section a:hover {
+color: #007bff;
+text-decoration: underline;
+}

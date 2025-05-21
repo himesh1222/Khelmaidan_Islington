@@ -1,0 +1,123 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.payment-container {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+.payment-box {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  border: 1px solid #eee;
+  transition: box-shadow 0.3s ease;
+}
+
+.payment-box:hover {
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
+}
+
+.logo-title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.khalti-logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.khalti-description {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+form label {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #5c2d91;
+  outline: none;
+}
+
+.pay-btn, .bank-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.pay-btn {
+  background-color: #5c2d91;
+  color: #fff;
+}
+
+.pay-btn:hover {
+  background-color: #452078;
+}
+
+.bank-btn {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.bank-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.divider {
+  text-align: center;
+  margin: 18px 0;
+  color: #aaa;
+  position: relative;
+  font-size: 0.9rem;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #ddd;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}

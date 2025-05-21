@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background: #0a0a0a;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #f8f8f8;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #b8b8b8;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+/* Contact Info Styling */
+.footer-column p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-column p img {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+/* Fixing the icon size issue */
+.social-icons img {
+    width: 50px; /* Standard size */
+    height: 50px; /* Maintain aspect ratio */
+    object-fit: cover; /* Prevent stretching */
+    background: transparent; /* Ensure no background */
+    border-radius: 50%; /* Make icons circular */
+}
+
+/* Optional: Remove white backgrounds on images */
+.social-icons img {
+    mix-blend-mode: lighten; /* Helps with dark mode issues */
+}

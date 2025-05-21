@@ -1,0 +1,170 @@
+@charset "UTF-8";
+.all-login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+    background-image: url("../resource/fustal/ground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow:hidden;
+  
+
+}
+
+
+
+
+/* Login Box */
+.login-container {
+  background: white;
+  padding: 50px 30px; /* Increased height, reduced width */
+  width: 370px; /* Smaller width */
+  border-radius: 10px; 
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 40px 35px rgba(0, 0, 0, 0.4); /* Stronger shadow */
+  transition: box-shadow 0.3s ease;
+  
+}
+
+/* Stronger box shadow on hover (but no movement) */
+.login-container:hover {
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.6);
+}
+
+/* Ensure input fields have proper padding */
+
+
+
+/* Close Button */
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+/* Hover effect on close button image */
+.close-button img {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Slight scaling and opacity change on hover */
+.close-button img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+/* Title */
+h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin: 10px 0 5px;
+}
+
+label span {
+  color: red;
+}
+
+/* Input Fields */
+input {
+  width:93%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input Focus Effect */
+input:focus {
+  outline: none;
+  border-color: black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Login Button */
+.login-button {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+  background: #333;
+}
+
+/* Forgot Password */
+.forgot-password {
+	width:100%;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  margin: 12px 0;
+  text-decoration: none;
+  color: black;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+/* General Reset for create-account class */
+.create-account {
+  
+  text-align: center;
+  background: white;
+  color: black;
+  padding: 14px;
+  border: 2px solid black;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+  text-decoration: none; /* important for anchor tags */
+}
+
+/* Remove default anchor and button behaviors */
+a.create-account, button.create-account {
+  all: unset; /* removes default styles */
+  display: block;
+  text-align: center;
+  background: white;
+  color: black;
+  padding: 14px;
+  border: 2px solid black;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect */
+.create-account:hover {
+  background: black;
+  color: White;
+}

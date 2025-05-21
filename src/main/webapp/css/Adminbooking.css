@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+body {
+  font-family: Arial, sans-serif;
+  background: #ACAB9E;
+  margin: 0;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+ 
+ 
+
+}
+
+.form-container {
+	
+ 
+  align-items: center;
+  width: 90%;
+  margin-left:40px;
+  margin-top:40px;
+  margin-bottom:40px;
+       /* Optional: limits the max width */
+  background: #D8D8D5;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 35px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Increased spacing between sections */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 14px; /* More space between label and input */
+}
+
+.form-group.double {
+  flex-direction: row;
+  gap: 40px; /* More space between paired fields */
+}
+
+.form-group.double > div,
+.split > input {
+  flex: 1;
+}
+
+label {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+label span {
+  color: red;
+}
+
+.split {
+  display: flex;
+  gap: 20px; /* Spacing between first & last name */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: border 0.2s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+select {
+  appearance: none;
+}
+
+small {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 4px;
+}
+
+/* Book Button */
+button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

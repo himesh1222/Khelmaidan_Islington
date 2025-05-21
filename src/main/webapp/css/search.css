@@ -1,0 +1,138 @@
+@charset "UTF-8";
+*{margin:0;}
+.futsal-box {
+	margin:30px;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 20px;
+    background: white;
+    padding: 0px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.futsal-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.futsal-img-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+}
+
+.futsal-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.futsal-info {
+    width: 100%;
+    text-align: center;
+    background: #f8ede5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.futsal-info h4 {
+    font-size: 25px;
+    font-weight: 100;
+    color: black;
+    font-family: "Arial", sans-serif;
+    margin: 5px;
+    padding: 0px;
+}
+
+.futsal-info h5 {
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0px;
+}
+
+.futsal-rate {
+    border-radius: 20px;
+    width: 80%;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.futsal-rate h6 {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 4px;
+    margin: 5px 0;
+    color: brown;
+}
+
+.futsal-contact-wrap {
+    width: 60%;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 6px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #BCCCDC;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+.futsal-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.futsal-contact-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.futsal-contact-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.futsal-phone h6 {
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.futsal-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+    z-index: 10;
+}
+
+.futsal-icon img {
+    width: 100%;
+    height: 100%;
+}
