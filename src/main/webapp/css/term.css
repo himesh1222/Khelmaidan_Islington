@@ -1,0 +1,49 @@
+.terms-container {
+  max-width: 1000px;
+  margin: 60px auto; /* Adds spacing from top and centers horizontally */
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Typography */
+.terms-container h1 {
+  font-size: 42px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #222;
+}
+
+.terms-container h2 {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  color: #444;
+}
+
+.terms-container hr {
+  margin-bottom: 20px;
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.terms-container p,
+.terms-container ul {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.terms-container ul {
+  list-style: disc;
+  margin-left: 25px;
+  padding-left: 0;
+}
+
+.intro {
+  margin-bottom: 30px;
+}

@@ -1,30 +1,62 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us</title>
-    <link rel="stylesheet" type="text/css"
+  
+   <link rel="stylesheet" type="text/css"
         href="${pageContext.request.contextPath}/css/aboutus.css" />
 </head>
 <body>
-<jsp:include page="/WEB-INF/page/header.jsp" />
+  <jsp:include page="/WEB-INF/page/header.jsp" />
+
   <div class="container">
- 
-    
+    <!-- About Us Section -->
     <div class="text-section">
-      <h1>About us.</h1>
+      <h1>About Us.</h1>
       <p class="highlight">
-      We at Khel Maidan enjoy advocating and participating in the dynamic world of futsal. It was love for the sport that brought about our site from a passion to provide players, coaches, and supporters with a platform where they could gather to celebrate and construct the sport. From grassroots to competitive leagues, it is our aim to bring into the spotlight all things futsal and make it accessible to the masses.
+        At <strong>Khel Maidan</strong>, we are passionate about futsal. What began as a shared love for the game has now evolved into one of Nepal’s first dedicated futsal platforms — a place where players, coaches, and clubs can come together to celebrate, organize, and grow the sport.
       </p>
       <p>
-      Our website offers extensive content that's targeted directly to the futsal community — including training material, match news, player profiles, club listings, and professional advice. If you're attempting to improve your game, discover future tournaments, or connect with local clubs, we have something for everyone. We intend to deliver quality, beneficial content that stimulates growth on and off the field.
+        Nepal's futsal culture is growing, but there has been a lack of dedicated digital platforms that streamline booking, community engagement, and access to resources. That’s where we step in. Khel Maidan aims to bridge this gap by being not just a booking service, but a full ecosystem for the futsal community.
       </p>
       <p>
-        Khel Maidan is not just a website - we're a family. We are here to inspire, to connect, and to uplift the players who make this sport so incredible. As futsal grows around the world, we are proud to be along for the journey — bringing people together through the shared love of the sport.
+        Our website offers easy futsal court booking, player profiles, match schedules, club listings, training content, and expert insights — all in one place. Whether you're trying to improve your game, connect with clubs, or just find a place to play with friends, Khel Maidan has you covered.
+      </p>
+      <p>
+        What sets us apart is our commitment to both convenience and community. We're building a platform that empowers players and brings Nepal’s futsal scene into the digital age. From grassroots matches to local leagues, we're here to make futsal accessible, exciting, and organized.
+      </p>
+      <p>
+        Khel Maidan is not just a website — we are a family. Our mission is to uplift every player, coach, and club through technology, storytelling, and community support. As futsal continues to grow across Nepal, we are proud to lead the way.
       </p>
     </div>
+
+    <!-- Team Section -->
+    <div class="team-section">
+      <h2>Meet Our Team</h2>
+      <table class="team-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Barsha Koirala</td><td>Database Developer</td></tr>
+          <tr><td>2</td><td>Anis Budakoti</td><td>UI/UX & Frontend Developer</td></tr>
+          <tr><td>3</td><td>Rohit Ghubaju</td><td>Wireframe, UI/UX & Frontend Developer</td></tr>
+          <tr><td>4</td><td>Om Bikram Malla</td><td>UI/UX & Frontend Developer</td></tr>
+          <tr><td>5</td><td>Himesh Shakya</td><td>Backend Developer</td></tr>
+        </tbody>
+      </table>
+    </div>
   </div>
+
   <jsp:include page="/WEB-INF/page/footer.jsp" />
 </body>
 </html>
+    

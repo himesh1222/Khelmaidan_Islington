@@ -8,25 +8,24 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Servlet implementation class Search
+ * Servlet implementation class TermController
  */
-@WebServlet("/Search")
-public class Search extends HttpServlet {
+@WebServlet("/TermController")
+public class TermController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Search() {
+    public TermController() {
         super();
         // TODO Auto-generated constructor stub
     }
 
 
-protected void doGet(HttpServletRequest request, HttpServletResponse response)
-        throws ServletException, IOException {
-    request.getRequestDispatcher("/WEB-INF/page/search.jsp").forward(request, response);
-}}
-
-
-
+	  protected void doGet(HttpServletRequest request, HttpServletResponse response)
+	            throws ServletException, IOException {
+	        System.out.println("GET request received for registration.");
+	        request.getRequestDispatcher("/WEB-INF/page/term.jsp").forward(request, response);
+	    }
+	}
